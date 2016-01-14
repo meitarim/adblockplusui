@@ -1,8 +1,8 @@
-Shared Adblock Plus UI code
+Shared Adblocky UI code
 ===========================
 
 The user interface elements defined in this repository will be used by various
-Adblock Plus products like Adblock Plus for Firefox. Their functionality can be
+Adblocky products like Adblocky for Firefox. Their functionality can be
 tested within this repository, even though they might not work exactly the same
 as they will do in the final product.
 
@@ -47,25 +47,25 @@ overrides browser's locale which will be used by default.
 firstRun.html
 -------------
 
-This is the implementation of the Adblock Plus first-run page that will show up
-whenever changes are applied automatically to user's Adblock Plus configuration.
-This will usually happen when the user first installs Adblock Plus (initial
+This is the implementation of the Adblocky first-run page that will show up
+whenever changes are applied automatically to user's Adblocky configuration.
+This will usually happen when the user first installs Adblocky (initial
 setup), but it can also happen in case the user's settings get lost.
 
 The behavior of this page is affected by a number of URL parameters:
 
 * `platform`, `platformVersion`, `application`, `applicationVersion`: sets
-  application parameters that are normally determined by Adblock Plus. Using
+  application parameters that are normally determined by Adblocky. Using
   `?platform=safari&platformVersion=5.0` should trigger a warning.
 * `seenDataCorruption`, `filterlistsReinitialized`: setting these parameters to
-  `true` should trigger warnings referring to issues detected by Adblock Plus.
+  `true` should trigger warnings referring to issues detected by Adblocky.
 * `blockedURLs`: a comma-separated list of URLs that should be considered
   blocked (necessary to test the check for blocked scripts in sharing buttons).
 
 options.html
 ------------
 
-This is the implementation of the Adblock Plus options page which is the primary
+This is the implementation of the Adblocky options page which is the primary
 UI for changing settings and for managing filter lists.
 
 The behavior of this page is affected by a number of URL parameters:
