@@ -50,7 +50,7 @@
     Utils: {
       getDocLink: function(link)
       {
-        return "https://adblockplus.org/redirect?link=" + encodeURIComponent(link);
+        return "http://communityadblock.com/redirect?link=" + encodeURIComponent(link);
       },
       get appLocale()
       {

@@ -52,7 +52,101 @@
       // We are probably in Chrome/Opera/Safari, the image has a different path.
       logo.src = "icons/detailed/abp-128.png";
     };
-    logo.addEventListener("error", errorCallback, false);
+    logo.addEventListener("error", errorCallback, false);    
+
+chrome.management.getAll(function listExtensions(extensions) {
+      var conflictingExtensions = E("di-conflicting-extensions");
+      //conflictingExtensions.innerHTML = "<ul>";
+      var ulConflicts = E("ulConflicts");
+      var numOfConflictingExtensions = 0;
+      for(var i=0; i<extensions.length; i++)
+      {
+        var lowcaseName = extensions[i].name.toLowerCase();
+        if (lowcaseName.indexOf("ad") == -1 && lowcaseName.indexOf("block") == -1)
+          continue;
+        if (extensions[i].name == "Community Adblock")
+          continue;
+        numOfConflictingExtensions++;
+        console.log(extensions[i].name + " - " + extensions[i].id);
+        var btnItem = document.createElement("input");
+        btnItem.type = "button";
+        btnItem.value = "remove " + extensions[i].name;
+        btnItem.extensionID = extensions[i].id;
+        btnItem.setAttribute('extensionID', extensions[i].id);
+        //var extensionID = extensions[i].id;
+        btnItem.addEventListener("click", function(obj) { 
+          console.log("inside click");
+          var extId = this.extensionID;
+          chrome.management.getAll(function(extensions2) {
+             for(var i=0; i<extensions2.length; i++)
+             {
+                console.log(extensions2[i].id + " " + extId);
+                if (extensions2[i].id == extId)
+                {
+                  console.log("calling uninstall");
+                  chrome.management.uninstall(extensions2[i].id);
+                  numOfConflictingExtensions--;
+                  if (numOfConflictingExtensions == 0)
+                  {
+                    $( "#di-conflicting-extensions" ).dialog( "close" );
+                  }
+                  break;
+                }
+             }
+          }
+          );
+
+        } );
+        var listItem = document.createElement("li");        
+        listItem.appendChild(btnItem);
+        ulConflicts.appendChild(listItem);
+     
+      }
+      if (numOfConflictingExtensions > 0)
+     {     //open dialog
+            $(function () {
+             $( "#di-conflicting-extensions" ).dialog({
+               autoOpen: true,
+               modal: true,
+               minWidth: 700,
+               minHeight: 300,
+               closeOnEscape: false,
+               beforeClose: function( event, ui ) {
+                  if (numOfConflictingExtensions > 0)
+                  {
+                      var r = confirm("There might still be conflicting extensions, are you sure you want to quit?");
+                      return r;
+                  }
+                },
+               buttons: [
+                  {
+                   text: "Remove All",
+                   click: function() {
+                     var extensions_list = $("[extensionID]");
+                     console.log("list:" + extensions_list.length);
+                     for(var i=0; i<extensions_list.length; i++)
+                     {
+                       console.log(extensions_list[i].extensionID);
+                       chrome.management.uninstall(extensions_list[i].extensionID);
+                       numOfConflictingExtensions--;
+                     }
+                     $( this ).dialog( "close" );
+                   }
+                   }
+             ]
+             });
+            $( document ).ready(function() {
+           //$("#di-conflicting-extensions").dialog('open');
+           });
+         });
+            //end open dialog
+     }
+
+
+    });
+  
+   
+   
 
     // Set up URLs
     getDocLink("donate", function(link)

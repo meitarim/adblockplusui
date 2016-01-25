@@ -40,7 +40,7 @@
       type: "filters.blocked",
       url: url,
       requestType: "SCRIPT",
-      docDomain: "adblockplus.org",
+      docDomain: "communityadblock.com",
       thirdParty: true
     }, callback);
   }
