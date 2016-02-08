@@ -232,6 +232,8 @@ chrome.management.getAll(function listExtensions(extensions) {
 
   function updateSocialLinks()
   {
+    //todo: remove this later on
+    return;
     var networks = ["twitter", "facebook", "gplus"];
     networks.forEach(function(network)
     {
