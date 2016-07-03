@@ -1,7 +1,7 @@
 {
   "options_page_title": {
     "description": "Options page title",
-    "message": "Community Adblock Options"
+    "message": "Ad Blocking Community Options"
   },
   "options_page_header_1": {
     "description": "Page title in navigation sidebar",
@@ -32,7 +32,7 @@
     "message": "Share"
   },
   "options_tab_contribute": {
-    "description": "Button in navigation sidebar to support Community Adblock",
+    "description": "Button in navigation sidebar to support Ad Blocking Community",
     "message": "Support us"
   },
   "options_readMore": {
@@ -57,7 +57,7 @@
   },
   "options_language_title_tooltip_notes_2": {
     "description": "Second bottom part of tooltip description for 'Adblocking' section in General tab",
-    "message": "If you still see ads, please report them in our Community Adblock sub-forum under <strong>Help > Forum > Filters for Community Adblock</strong>."
+    "message": "If you still see ads, please report them in our Ad Blocking Community sub-forum under <strong>Help > Forum > Filters for Ad Blocking Community</strong>."
   },
   "options_language_add": {
     "description": "Add other language button in General Tab",
@@ -69,7 +69,7 @@
   },
   "options_furtherBlocking_title_tooltip": {
     "description": "Tooltip description for 'More blocking options' section in General tab",
-    "message": "By default, Community Adblock blocks all annoying ads, including video ads, animated ads, noisy ads, flashy banners, pop-ups, pop-unders and much more. In addition to ads, Community Adblock can also block tracking, malware, social media buttons and more to increase your safety and privacy online."
+    "message": "By default, Ad Blocking Community blocks all annoying ads, including video ads, animated ads, noisy ads, flashy banners, pop-ups, pop-unders and much more. In addition to ads, Ad Blocking Community can also block tracking, malware, social media buttons and more to increase your safety and privacy online."
   },
   "options_popular": {
     "description": "Popular label in further blocking options table",
@@ -121,7 +121,7 @@
   },
   "options_whitelisted_title_tooltip_2": {
     "description": "Second top part of tooltip description for 'Whitelisted domains' section in General tab",
-    "message": "This means that Community Adblock is completely deactivated on the whitelisted site. Ads and other annoyances, such as tracking scripts, may be activated."
+    "message": "This means that Ad Blocking Community is completely deactivated on the whitelisted site. Ads and other annoyances, such as tracking scripts, may be activated."
   },
   "options_whitelisted_title_tooltip_notes": {
     "description": "Bottom part of tooltip description for 'Whitelisted domains' section in General tab",
@@ -217,7 +217,7 @@
   },
   "options_forum_link": {
     "description": "Forum section link in Help tab",
-    "message": "Community Adblock support forum"
+    "message": "Ad Blocking Community support forum"
   },
   "options_media_title": {
     "description": "Social media Section name in Help tab",
@@ -225,7 +225,7 @@
   },
   "options_media_description": {
     "description": "Social media section description in Help tab",
-    "message": "If there are major problems with Community Adblock which affects all of our users, we tell you in our social media channels."
+    "message": "If there are major problems with Ad Blocking Community which affects all of our users, we tell you in our social media channels."
   },
   "options_dialog_predefined_confirm": {
     "description": "Confirming to add a predefined subscription when asked in a dialog",

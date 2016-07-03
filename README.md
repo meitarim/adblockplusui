@@ -1,8 +1,8 @@
-Shared Community Adblock UI code
+Shared Ad Blocking Community UI code
 ===========================
 
 The user interface elements defined in this repository will be used by various
-Community Adblock products like Community Adblock for Firefox. Their functionality can be
+Ad Blocking Community products like Ad Blocking Community for Firefox. Their functionality can be
 tested within this repository, even though they might not work exactly the same
 as they will do in the final product.
 
@@ -47,25 +47,25 @@ overrides browser's locale which will be used by default.
 firstRun.html
 -------------
 
-This is the implementation of the Community Adblock first-run page that will show up
-whenever changes are applied automatically to user's Community Adblock configuration.
-This will usually happen when the user first installs Community Adblock (initial
+This is the implementation of the Ad Blocking Community first-run page that will show up
+whenever changes are applied automatically to user's Ad Blocking Community configuration.
+This will usually happen when the user first installs Ad Blocking Community (initial
 setup), but it can also happen in case the user's settings get lost.
 
 The behavior of this page is affected by a number of URL parameters:
 
 * `platform`, `platformVersion`, `application`, `applicationVersion`: sets
-  application parameters that are normally determined by Community Adblock. Using
+  application parameters that are normally determined by Ad Blocking Community. Using
   `?platform=safari&platformVersion=5.0` should trigger a warning.
 * `seenDataCorruption`, `filterlistsReinitialized`: setting these parameters to
-  `true` should trigger warnings referring to issues detected by Community Adblock.
+  `true` should trigger warnings referring to issues detected by Ad Blocking Community.
 * `blockedURLs`: a comma-separated list of URLs that should be considered
   blocked (necessary to test the check for blocked scripts in sharing buttons).
 
 options.html
 ------------
 
-This is the implementation of the Community Adblock options page which is the primary
+This is the implementation of the Ad Blocking Community options page which is the primary
 UI for changing settings and for managing filter lists.
 
 The behavior of this page is affected by a number of URL parameters:

@@ -45,13 +45,13 @@
     "message": "Böngésszen privátban azáltal, hogy letiltja a követést - elrejtheti nyomait a reklámcégek elől, amelyek egyébként figyelnék minden lépését."
   },
   "firstRun_features": {
-    "message": "Az Community Adblock a reklámok blokkolásánál többre is képes"
+    "message": "Az Ad Blocking Community a reklámok blokkolásánál többre is képes"
   },
   "firstRun_filterlistsReinitializedWarning": {
-    "message": "Egy hiba miatt az összes szűrő eltávolításra került és a biztonsági másolatot sem sikerült visszaállítani. Az összes szűrő és az elfogadható hirdetések beállításai alapállapotba kerültek. Kérem ellenőrizze a szűrő listákat és az elfogadható hirdetések beállításait az <a>Community Adblock opció</a> közt."
+    "message": "Egy hiba miatt az összes szűrő eltávolításra került és a biztonsági másolatot sem sikerült visszaállítani. Az összes szűrő és az elfogadható hirdetések beállításai alapállapotba kerültek. Kérem ellenőrizze a szűrő listákat és az elfogadható hirdetések beállításait az <a>Ad Blocking Community opció</a> közt."
   },
   "firstRun_legacySafariWarning": {
-    "message": "A Safari egy régi verzióját használja, amelyet nem támogat az Community Adblock. Lehetséges, hogy nem fog megfelelően működni vagy lelassítja a működést egyes weboldalakon. Erősen ajánlott frissíteni a Safari 6.1.1-es (Mac OS X 10.8 Mountain Lion operációs rendszeren) , vagy a Safari 7.0.1-es és újabb verzióira (OS X 10.9 Maverics operációs rendszertől) vagy használja a Mozilla Firefox, Google Chrome vagy Opera legújabb verzióját."
+    "message": "A Safari egy régi verzióját használja, amelyet nem támogat az Ad Blocking Community. Lehetséges, hogy nem fog megfelelően működni vagy lelassítja a működést egyes weboldalakon. Erősen ajánlott frissíteni a Safari 6.1.1-es (Mac OS X 10.8 Mountain Lion operációs rendszeren) , vagy a Safari 7.0.1-es és újabb verzióira (OS X 10.9 Maverics operációs rendszertől) vagy használja a Mozilla Firefox, Google Chrome vagy Opera legújabb verzióját."
   },
   "firstRun_share": {
     "message": "Mondja el barátainak"
@@ -60,7 +60,7 @@
     "message": "<a>Segítsen nekünk</a> jobb hellyé tenni a világhálót"
   },
   "firstRun_title": {
-    "message": "Sikeresen telepítette az Community Adblock-t"
+    "message": "Sikeresen telepítette az Ad Blocking Community-t"
   },
   "firstRun_toggle_off": {
     "message": "KIKAPCSOLVA"
